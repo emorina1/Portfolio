@@ -1,0 +1,117 @@
+/* General container settings */
+#intro {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Ensures any overflow is hidden */
+    padding: 0 50px; /* Adds space around the content */
+  }
+  
+  /* Image container */
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw; /* Adjusted size for image container */
+    height: 50vh;
+    position: relative;
+    transition: transform 1.0s ease-in-out;
+  }
+  .helloIcon {
+    width: 30px; /* ose dimensione të tjera sipas nevojës */
+    height: 30px;
+    margin-left: 10px; /* ose dimensione të tjera sipas nevojës */
+}
+
+  .bg {
+    width: 100%; /* The image takes up the full width of the container */
+    height: auto;
+    z-index: 1;
+    transition: transform 1.5s ease-in-out;
+    object-fit: cover; /* Ensures the image covers the space */
+  }
+  
+  /* Move the image to the side */
+  .moveImage {
+    transform: translateX(-30%); /* Push image to the left */
+  }
+  
+  /* Slide in the description content */
+  .slideIn {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideInContent 1.5s ease-in-out forwards;
+  }
+  
+  /* Keyframes for sliding in the content */
+  @keyframes slideInContent {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Intro content */
+  .introContent {
+    text-align: center; /* Center text in the intro content */
+    max-width: 40vw; /* Description text area width */
+    color: #333;
+    font-family: 'Abril Fatface', sans-serif; /* Elegant font */
+    padding: 20px;
+  }
+  
+  /* Style for the text and heading */
+  .hello {
+    font-size: 48px; /* Larger greeting text */
+    font-weight: bold;
+    margin: 10px 0;
+    color: #f4f1f1;
+  }
+  
+  .introText {
+    font-size: 40px; /* Larger introduction text */
+    font-weight: bold;
+    color: #5A67D8; /* Accent color */
+    margin: 20px 0;
+  }
+  
+  .introName {
+    color: #434190; /* Accent for name */
+  }
+  
+  .introPara {
+    font-size: 20px; /* Larger paragraph text */
+    line-height: 1.6;
+    color: #fbfbfb;
+    margin-top: 20px;
+    font-family: 'Lora', serif; /* A more classic, readable font for paragraph */
+  }
+  
+  /* Smaller button styling */
+  .btn {
+    background-color: #5A67D8;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Smaller padding for a compact button */
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    font-size: 16px; /* Slightly smaller font for the button */
+  }
+  
+  .btn:hover {
+    background-color: #434190; /* Darker on hover */
+  }
+  
+  .btnImg {
+    width: 16px; /* Adjusted size for the button image */
+    height: auto;
+  }
+  

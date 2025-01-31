@@ -1,0 +1,69 @@
+#contact {
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactPageTitle {
+    font-size: 2rem; /* Increased font size */
+    font-weight: bold; /* Added bold for emphasis */
+    margin: 0; /* Cleaner look */
+}
+
+.contactDesc {
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.contactDesc, .contactPageTitle, .contactForm {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 60rem;
+}
+
+.name, .email, .msg {
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #c59b9b;
+    background-image: linear-gradient(147deg, #cdb2b2 0%, #dfcbcb 74%);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.submitBtn {
+    background-color: rgba(243, 156, 169, 0.5);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 3.5rem;
+    cursor: pointer; /* Added cursor pointer for better UX */
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5rem; /* Added some margin for better spacing */
+}
+
+.link {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
+}

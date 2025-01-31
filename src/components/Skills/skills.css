@@ -1,0 +1,81 @@
+#skills {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.skillTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.skillDesc {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 51rem;
+    padding: 0.2rem;
+    color: #555; /* Ngjyra e tekstit për të përmirësuar kontrastin */
+}
+
+.skillBars {
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+    display: flex; /* Shtuar për të lejuar rreshtim horizontal */
+    flex-wrap: wrap; /* Lejon kutitë të rreshtohen në linja të ndryshme */
+    justify-content: space-between; /* Krijon hapësirë midis kutive */
+}
+
+.skillBar {
+    display: flex;
+    margin: 1.5rem; /* Rritur margin */
+    padding: 2rem 3rem; /* Rritur padding */
+    border-radius: 1rem;
+    background-color: #e8dede;
+    background-image: linear-gradient(147deg, #d59aba 0%, #b3a0ea 100%);
+    width: calc(45% - 2rem); /* Gjysmë gjatësie me hapësirë */
+    max-width: 650px; /* Rritur maksimumi për një pamje më të gjerë */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Hije për theksim */
+    border: 2px solid #e9b4b4; /* Kufiri për strukturë më të mirë */
+}
+
+.skillBarImg {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem; /* Shtuar hapësirë në anën e djathtë të imazhit */
+}
+
+.skillBarText > p {
+    font-size: 0.85rem; /* Rritur madhësinë e fontit për përmbajtje më të lehtë */
+    font-weight: 200;
+    color: #333; /* Ngjyra e tekstit për kontrast më të mirë */
+}
+
+@media screen and (max-width: 720px) {
+    .skillBarText > p {
+        font-size: 2.5vw; /* Rritur madhësinë në pajisje më të vogla */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skillBarText > p {
+        font-size: 3vw;
+    }
+    .skillBarImg {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+    .skillBarText > h2 {
+        font-size: 5vw;
+    }
+}

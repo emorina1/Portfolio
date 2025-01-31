@@ -1,0 +1,11 @@
+.footer{
+    width: 100vw;
+    height: 4rem;
+    background-color: #c59b9b;
+    background-image: linear-gradient(147deg, #cdb2b2 0%, #dfcbcb 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: small;
+}

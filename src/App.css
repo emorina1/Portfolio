@@ -1,0 +1,11 @@
+.App {
+    font-family: Arial, sans-serif; /* Fonti i përgjithshëm */
+    color: #333; /* Ngjyra e tekstit për të gjithë aplikacionin */
+    margin: 0;
+    padding: 0;
+  }
+  
+  section {
+    padding: 2rem; /* Shtuar hapësira për secilën seksion */
+  }
+  

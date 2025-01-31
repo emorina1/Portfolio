@@ -30,12 +30,13 @@ const Intro = () => {
             <br />
             Web Developer
           </span>
-          <p className="introPara">
-            I am in the early stages of learning programming. <br />
-            In the near future,
-            <br />
-            I aspire to become a programmer.
-          </p>
+          <br/>
+          <div class="fade-zoom-container">
+  <p>My name is Elsa, and I am an enthusiastic student in the field of Computer Science. <br/>Currently, I am pursuing my studies in this area and focusing on the development of applications and websites. I have strong knowledge of web development technologies, including HTML, CSS, JavaScript, and I’ve also started exploring frameworks like React. I am passionate about technology and always looking for opportunities to learn more and grow as a web developer. During my studies, I have worked on several practical projects related to web development, and I hope to contribute to creating innovative solutions to problems faced in the digital world.</p>
+</div>
+<p class="fade-in">🚀 I love technology and innovation!</p>
+
+
           <Link to="contact" smooth={true} duration={500}>
             <button className="btn" aria-label="Hire Me">
               <img src={btnImg} alt="Hire Me" className="btnImg" />

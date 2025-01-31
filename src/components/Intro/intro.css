@@ -77,21 +77,45 @@
   .introText {
     font-size: 40px; /* Larger introduction text */
     font-weight: bold;
-    color: #5A67D8; /* Accent color */
+    color: #cb5da4; /* Accent color */
     margin: 20px 0;
   }
   
   .introName {
     color: #434190; /* Accent for name */
   }
-  
-  .introPara {
-    font-size: 20px; /* Larger paragraph text */
-    line-height: 1.6;
-    color: #fbfbfb;
-    margin-top: 20px;
-    font-family: 'Lora', serif; /* A more classic, readable font for paragraph */
+  @keyframes fadeZoom {
+    0% {
+      opacity: 0;
+      transform: scale(0.9); /* Start smaller */
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1); /* End at normal size */
+    }
   }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .fade-zoom-container {
+    animation: fadeZoom 2s ease-in-out forwards;
+    font-size: 22px;
+    line-height: 1.8;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    color: #FF6347; /* Text color */
+    font-size: 24px;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out 3s forwards; /* Delay after fade-zoom */
+  }
+  
   
   /* Smaller button styling */
   .btn {

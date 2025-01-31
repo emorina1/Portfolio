@@ -1,81 +1,140 @@
-#skills {
-    overflow: hidden;
-    width: 100vw;
-    max-width: 65rem;
+/* General styles for the Skills section */
+#Skills {
+    display: block;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: flex-start; /* Align items to the top */
+    padding: 60px 20px; /* Increased padding for more space */
+    background-color: transparent; /* Transparent background */
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); /* Box shadow on the left side */
+    position: relative; /* Make sure positioning is controlled */
+  }
+  
+  /* Gallery for the project cards */
+  .projectGallery {
+    display: flex;
+    flex-direction: column; /* Stacking the projects vertically */
+    justify-content: center;
+    align-items: flex-start; /* Align to the left instead of center */
+    gap: 50px; /* Increased gap between project cards for better separation */
+  }
+  
+  /* Individual project card styles */
+  .projectCard {
+    background: white;
+    border-radius: 15px; /* More rounded corners for a smoother look */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    overflow: visible; /* Prevent overflow cut-off */
+    width: 650px; /* Wider card for better content display */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.skillTitle {
-    font-size: 3rem;
-    font-weight: 600;
-    padding-top: 3rem;
-    margin-bottom: 1.5rem;
-}
-
-.skillDesc {
-    font-weight: 400;
-    font-size: 1rem;
-    max-width: 51rem;
-    padding: 0.2rem;
-    color: #555; /* Ngjyra e tekstit për të përmirësuar kontrastin */
-}
-
-.skillBars {
-    margin: 1.5rem;
-    width: 100vw;
-    max-width: 80%;
-    text-align: left;
-    display: flex; /* Shtuar për të lejuar rreshtim horizontal */
-    flex-wrap: wrap; /* Lejon kutitë të rreshtohen në linja të ndryshme */
-    justify-content: space-between; /* Krijon hapësirë midis kutive */
-}
-
-.skillBar {
+    align-items: flex-start;
+    padding: 25px; /* More padding inside the card */
+    height: auto; /* Allow height to adjust based on content */
+  }
+  
+  /* Hover effect for project cards */
+  .projectCard:hover {
+    transform: translateY(-10px); /* Subtle upward movement on hover */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+    filter: brightness(1.05); /* Slight brightness increase on hover */
+  }
+  
+  /* Content wrapper for text and image */
+  .projectContentWrapper {
     display: flex;
-    margin: 1.5rem; /* Rritur margin */
-    padding: 2rem 3rem; /* Rritur padding */
-    border-radius: 1rem;
-    background-color: #e8dede;
-    background-image: linear-gradient(147deg, #d59aba 0%, #b3a0ea 100%);
-    width: calc(45% - 2rem); /* Gjysmë gjatësie me hapësirë */
-    max-width: 650px; /* Rritur maksimumi për një pamje më të gjerë */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Hije për theksim */
-    border: 2px solid #e9b4b4; /* Kufiri për strukturë më të mirë */
-}
-
-.skillBarImg {
+    align-items: flex-start; /* Align top to avoid cutting off text */
+    gap: 25px;
+    width: 100%;
+  }
+  
+  /* Image styles for the project */
+  .projectImg {
+    width: 200px; /* Larger image */
+    height: 200px; /* Larger image */
     object-fit: cover;
-    height: 3rem;
-    width: 3rem;
-    margin-right: 2rem; /* Shtuar hapësirë në anën e djathtë të imazhit */
-}
-
-.skillBarText > p {
-    font-size: 0.85rem; /* Rritur madhësinë e fontit për përmbajtje më të lehtë */
-    font-weight: 200;
-    color: #333; /* Ngjyra e tekstit për kontrast më të mirë */
-}
-
-@media screen and (max-width: 720px) {
-    .skillBarText > p {
-        font-size: 2.5vw; /* Rritur madhësinë në pajisje më të vogla */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .skillBarText > p {
-        font-size: 3vw;
-    }
-    .skillBarImg {
-        height: 2.25rem;
-        width: 2.25rem;
-    }
-    .skillBarText > h2 {
-        font-size: 5vw;
-    }
-}
+    border-radius: 12px; /* Slightly rounder corners for images */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for images */
+  .projectImg:hover {
+    transform: scale(1.05); /* Slight scale effect when hovered */
+  }
+  
+  /* Project content text (title and description) */
+  .projectContent {
+    flex: 1;
+  }
+  
+  /* Title styling */
+.projectContent h3 {
+    font-size: 2rem; /* Larger heading for better visibility */
+    margin-bottom: 20px; /* More space between the title and description */
+    color: #3498db; /* Light blue color for the title */
+  }
+  
+  /* Paragraph description styling */
+  .projectContent p {
+    font-size: 1.2rem; /* Larger text size for readability */
+    color: #666; /* Softer gray for paragraph text */
+    margin-bottom: 20px; /* More space between text elements */
+    word-wrap: break-word; /* Ensure the text breaks and does not overflow */
+    white-space: normal; /* Allow the text to wrap naturally */
+  }
+  
+  /* Links section styling */
+  .projectLinks {
+    display: flex;
+    gap: 20px; /* Larger gap between links for a more spacious layout */
+  }
+  
+  /* Link styles */
+  .projectLinks a {
+    text-decoration: none;
+    color: #3498db; /* Bright and clean link color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+  }
+  
+  /* Hover effect for links */
+  .projectLinks a:hover {
+    color: #2980b9; /* Slightly darker hover color */
+  }
+  
+  /* Lightbox modal styles */
+  .lightbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    cursor: pointer; /* To close when clicking outside the image */
+  }
+  
+  /* Lightbox image content styling */
+  .lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+  }
+  
+  /* Close button styles */
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  

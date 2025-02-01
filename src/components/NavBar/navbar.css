@@ -8,7 +8,8 @@
     align-items: center;
     justify-content: space-between;
     position: sticky;
-    top: 0;
+
+    left: 0; 
     z-index: 3;
    
     /*background-color: rgba(228, 182, 139, 0.859);*/

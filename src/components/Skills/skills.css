@@ -1,25 +1,24 @@
 /* General styles for the Skills section */
 #Skills {
-    display: block;
+    display: flex;
     justify-content: flex-start; /* Align content to the left */
     align-items: flex-start; /* Align items to the top */
     padding: 60px 20px; /* Increased padding for more space */
     background-color: transparent; /* Transparent background */
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); /* Box shadow on the left side */
     position: relative; /* Make sure positioning is controlled */
-  }
-  
-  /* Gallery for the project cards */
-  .projectGallery {
+}
+
+/* Gallery for the project cards */
+.projectGallery {
     display: flex;
-    flex-direction: column; /* Stacking the projects vertically */
-    justify-content: center;
-    align-items: flex-start; /* Align to the left instead of center */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: flex-start; /* Align to the left */
     gap: 50px; /* Increased gap between project cards for better separation */
-  }
-  
-  /* Individual project card styles */
-  .projectCard {
+}
+
+/* Individual project card styles */
+.projectCard {
     background: white;
     border-radius: 15px; /* More rounded corners for a smoother look */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
@@ -32,81 +31,81 @@
     align-items: flex-start;
     padding: 25px; /* More padding inside the card */
     height: auto; /* Allow height to adjust based on content */
-  }
-  
-  /* Hover effect for project cards */
-  .projectCard:hover {
+}
+
+/* Hover effect for project cards */
+.projectCard:hover {
     transform: translateY(-10px); /* Subtle upward movement on hover */
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15); /* Deeper shadow */
     filter: brightness(1.05); /* Slight brightness increase on hover */
-  }
-  
-  /* Content wrapper for text and image */
-  .projectContentWrapper {
+}
+
+/* Content wrapper for text and image */
+.projectContentWrapper {
     display: flex;
     align-items: flex-start; /* Align top to avoid cutting off text */
     gap: 25px;
     width: 100%;
-  }
-  
-  /* Image styles for the project */
-  .projectImg {
+}
+
+/* Image styles for the project */
+.projectImg {
     width: 200px; /* Larger image */
     height: 200px; /* Larger image */
     object-fit: cover;
     border-radius: 12px; /* Slightly rounder corners for images */
     cursor: pointer;
     transition: transform 0.3s ease;
-  }
-  
-  /* Hover effect for images */
-  .projectImg:hover {
+}
+
+/* Hover effect for images */
+.projectImg:hover {
     transform: scale(1.05); /* Slight scale effect when hovered */
-  }
-  
-  /* Project content text (title and description) */
-  .projectContent {
+}
+
+/* Project content text (title and description) */
+.projectContent {
     flex: 1;
-  }
-  
-  /* Title styling */
+}
+
+/* Title styling */
 .projectContent h3 {
     font-size: 2rem; /* Larger heading for better visibility */
     margin-bottom: 20px; /* More space between the title and description */
     color: #3498db; /* Light blue color for the title */
-  }
-  
-  /* Paragraph description styling */
-  .projectContent p {
+}
+
+/* Paragraph description styling */
+.projectContent p {
     font-size: 1.2rem; /* Larger text size for readability */
     color: #666; /* Softer gray for paragraph text */
     margin-bottom: 20px; /* More space between text elements */
     word-wrap: break-word; /* Ensure the text breaks and does not overflow */
     white-space: normal; /* Allow the text to wrap naturally */
-  }
-  
-  /* Links section styling */
-  .projectLinks {
+}
+
+/* Links section styling */
+.projectLinks {
     display: flex;
     gap: 20px; /* Larger gap between links for a more spacious layout */
-  }
-  
-  /* Link styles */
-  .projectLinks a {
+}
+
+/* Link styles */
+.projectLinks a {
     text-decoration: none;
     color: #3498db; /* Bright and clean link color */
     font-weight: bold;
     transition: color 0.3s ease;
     font-size: 1.1rem;
-  }
-  
-  /* Hover effect for links */
-  .projectLinks a:hover {
+}
+
+/* Hover effect for links */
+.projectLinks a:hover {
     color: #2980b9; /* Slightly darker hover color */
-  }
-  
-  /* Lightbox modal styles */
-  .lightbox {
+}
+
+/* Lightbox modal styles */
+.lightbox {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,17 +117,17 @@
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1000;
     cursor: pointer; /* To close when clicking outside the image */
-  }
-  
-  /* Lightbox image content styling */
-  .lightbox-content {
+}
+
+/* Lightbox image content styling */
+.lightbox-content {
     max-width: 90%;
     max-height: 90%;
     border-radius: 10px;
-  }
-  
-  /* Close button styles */
-  .close {
+}
+
+/* Close button styles */
+.close {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -136,43 +135,44 @@
     font-size: 30px;
     cursor: pointer;
     font-weight: bold;
-  }
-  /* Responsive Design for Mobile */
+}
+
+/* Responsive Design for Mobile */
 @media (max-width: 768px) {
     #Skills {
-      padding: 40px 15px; /* Smaller padding on mobile */
+        padding: 40px 15px; /* Smaller padding on mobile */
     }
-  
+
     .projectGallery {
-      gap: 30px; /* Reduce gap on smaller screens */
+        gap: 30px; /* Reduce gap on smaller screens */
     }
-  
+
     .projectCard {
-      width: 100%; /* Make project cards full width on mobile */
-      padding: 20px; /* Reduced padding */
+        width: 100%; /* Make project cards full width on mobile */
+        padding: 20px; /* Reduced padding */
     }
-  
+
     .projectContentWrapper {
-      flex-direction: column; /* Stack text and image vertically on smaller screens */
-      align-items: center; /* Center align for mobile */
-      gap: 15px; /* Reduce gap on mobile */
+        flex-direction: column; /* Stack text and image vertically on smaller screens */
+        align-items: center; /* Center align for mobile */
+        gap: 15px; /* Reduce gap on mobile */
     }
-  
+
     .projectImg {
-      width: 100%; /* Make image responsive */
-      height: auto; /* Maintain aspect ratio */
+        width: 100%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
     }
-  
+
     .projectContent h3 {
-      font-size: 1.8rem; /* Slightly smaller font on mobile */
+        font-size: 1.8rem; /* Slightly smaller font on mobile */
     }
-  
+
     .projectContent p {
-      font-size: 1rem; /* Adjust paragraph text size on mobile */
+        font-size: 1rem; /* Adjust paragraph text size on mobile */
     }
-  
+
     .projectLinks {
-      flex-direction: column; /* Stack the links vertically */
-      gap: 10px; /* Reduced gap between links */
+        flex-direction: column; /* Stack the links vertically */
+        gap: 10px; /* Reduced gap between links */
     }
-  }
+}

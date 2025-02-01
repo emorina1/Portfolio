@@ -138,4 +138,42 @@
     width: 16px; /* Adjusted size for the button image */
     height: auto;
   }
-  
+  @media screen and (max-width: 720px) {
+    #intro {
+        padding: 0 20px; /* Less padding on mobile */
+        height: auto; /* Allow intro section to grow with content */
+    }
+
+    .imageContainer {
+        width: 60vw; /* Adjust image container width for mobile */
+        height: 40vh; /* Adjust image container height */
+        margin-bottom: 10px; /* Reduced margin for mobile */
+    }
+
+    .bg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .introContent {
+        max-width: 90vw; /* Allow content to take up more space */
+        padding: 10px; /* Reduced padding for mobile */
+    }
+
+    .hello {
+        font-size: 2.2rem; /* Adjusted font size for mobile */
+    }
+
+    .introText {
+        font-size: 2rem; /* Adjusted font size for mobile */
+    }
+
+    .introName {
+        font-size: 1.6rem; /* Adjusted font size for mobile */
+    }
+
+    .btn {
+        font-size: 14px; /* Smaller button text */
+        padding: 8px 16px; /* Reduced padding for smaller button */
+    }
+}

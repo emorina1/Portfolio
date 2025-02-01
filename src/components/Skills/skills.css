@@ -137,4 +137,42 @@
     cursor: pointer;
     font-weight: bold;
   }
+  /* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    #Skills {
+      padding: 40px 15px; /* Smaller padding on mobile */
+    }
   
+    .projectGallery {
+      gap: 30px; /* Reduce gap on smaller screens */
+    }
+  
+    .projectCard {
+      width: 100%; /* Make project cards full width on mobile */
+      padding: 20px; /* Reduced padding */
+    }
+  
+    .projectContentWrapper {
+      flex-direction: column; /* Stack text and image vertically on smaller screens */
+      align-items: center; /* Center align for mobile */
+      gap: 15px; /* Reduce gap on mobile */
+    }
+  
+    .projectImg {
+      width: 100%; /* Make image responsive */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .projectContent h3 {
+      font-size: 1.8rem; /* Slightly smaller font on mobile */
+    }
+  
+    .projectContent p {
+      font-size: 1rem; /* Adjust paragraph text size on mobile */
+    }
+  
+    .projectLinks {
+      flex-direction: column; /* Stack the links vertically */
+      gap: 10px; /* Reduced gap between links */
+    }
+  }

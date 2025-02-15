@@ -176,3 +176,51 @@ p {
     font-weight: bold;
     cursor: pointer;
 }
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column; /* Ndryshon drejtimin në kolona për ekrane të vogla */
+        padding: 20px; /* Ul hapësirën e brendshme */
+    }
+
+    .container {
+        flex-direction: column; /* Rradhit elementet në kolona */
+        gap: 20px; /* Gap më i vogël */
+        padding: 20px;
+    }
+
+    .image-section img {
+        max-width: 200px; /* Ul madhësinë e fotos */
+        margin-right: 0;
+    }
+
+    .name-title {
+        font-size: 16px; /* Ul madhësinë e fontit */
+        text-align: left; /* Rregullon tekstin në anën e majtë */
+    }
+
+    .content {
+        font-size: 16px; /* Përshtat madhësinë e fontit */
+        padding: 10px;
+    }
+
+    .skills li {
+        font-size: 16px; /* Ul madhësinë e fontit në listat e aftësive */
+    }
+
+    .certifications .certification-link {
+        font-size: 16px; /* Ul madhësinë e fontit të butonave */
+        padding: 10px 15px;
+    }
+
+    #cert-image {
+        max-width: 100%; /* Bën që imazhi të jetë më i vogël dhe të përshtatet me ekranin */
+    }
+
+    h2 {
+        font-size: 28px; /* Ul madhësinë e titujve */
+    }
+
+    p {
+        font-size: 18px; /* Ul madhësinë e tekstit */
+    }
+}

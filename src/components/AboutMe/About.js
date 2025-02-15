@@ -54,9 +54,8 @@ const AboutUs = () => {
             <div className="skills">
               <h3>Skills</h3>
               <ul>
-                <li>Node.js</li>
-                <li>Next.js</li>
-                <li>Express</li>
+                <li>PHP</li>
+                <li>Angular</li>
                 <li>MySQL</li>
                 <li>JavaScript</li>
                 <li>React</li>

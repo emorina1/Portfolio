@@ -24,6 +24,18 @@ const Navbar = () => {
         >
           Home
         </Link>
+
+        <Link 
+          activeClass="active" 
+          to="about-us" 
+          spy={true} 
+          smooth={true} 
+          offset={-50} 
+          duration={500} 
+          className="desktopMenuListItem"
+        >
+          About
+          </Link>
         <Link 
           activeClass="active" 
           to="Skills" 
@@ -94,6 +106,18 @@ const Navbar = () => {
           onClick={() => setShowMenu(false)}
         >
           Skills
+        </Link>
+        <Link 
+          activeClass="active" 
+          to="about-us" 
+          spy={true} 
+          smooth={true} 
+          offset={-50} 
+          duration={500} 
+          className="listItem" 
+          onClick={() => setShowMenu(false)}
+        >
+          About
         </Link>
         <Link 
           activeClass="active" 

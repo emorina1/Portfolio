@@ -1,0 +1,159 @@
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    box-shadow: #333;
+    background-color: transparent;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 1400px; /* Zgjeruar për të krijuar më shumë hapësirë */
+    width: 100%;
+    background: white;
+    padding: 40px; /* Shtuar hapësirë të brendshme */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Shadow më i theksuar */
+    flex-direction: row;
+    gap: 40px; /* Gap më i madh për më shumë hapësirë midis elementeve */
+}
+
+.image-section img {
+    max-width: 300px; /* Rritur madhësinë e fotos */
+    border-radius: 100%;
+    margin-right: 40px; /* Larguar më shumë nga teksti */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Shadow më i theksuar */
+}
+.name-title {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.6;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 36px; /* Përshtatur fontin më të madh për titullin */
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+p {
+    font-size: 20px; /* Rritur madhësinë e fontit */
+    line-height: 1.8;
+    color: #555;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px; /* Hapësirë më e madhe në mes seksioneve */
+    gap: 30px; /* Gap më i madh për seksionet */
+}
+
+.skills, .certifications {
+    flex: 1;
+}
+.skills  h3{
+    color: #333;
+  
+}
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #f4f4f4;
+    margin: 12px 0; /* Rritur hapësirën midis elementeve */
+    padding: 10px 15px; /* Rritur hapësirën e brendshme */
+    border-radius: 8px;
+    font-size: 18px; /* Përshtatur madhësinë e fontit */
+    color: #333;
+}
+
+.certifications {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.certifications h3{
+   color: #333;
+}
+.certification-link {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 18px; /* Rritur hapësirë për butonat */
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.certification-link:hover {
+    background: #0056b3;
+}
+
+#certificates-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cert-image {
+    max-width: 90%; /* Zgjeruar imazhin më shumë */
+    max-height: 450px; /* Rritur lartësinë maksimale */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Shadow më i theksuar */
+}
+
+/* Lightbox container */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+/* Lightbox image */
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 35px; /* Rritur madhësinë e ikonës së mbylljes */
+    font-weight: bold;
+    cursor: pointer;
+}

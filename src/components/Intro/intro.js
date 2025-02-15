@@ -32,7 +32,9 @@ const Intro = () => {
           </span>
           <br/>
           <div class="fade-zoom-container">
-  <p>My name is Elsa, and I am an enthusiastic student in the field of Computer Science. <br/>Currently, I am pursuing my studies in this area and focusing on the development of applications and websites. I have strong knowledge of web development technologies, including HTML, CSS, JavaScript, and I’ve also started exploring frameworks like React. I am passionate about technology and always looking for opportunities to learn more and grow as a web developer. During my studies, I have worked on several practical projects related to web development, and I hope to contribute to creating innovative solutions to problems faced in the digital world.</p>
+  <p>My name is Elsa, and I am an enthusiastic student in the field of Computer Science. <br/>I am in the early stages of learning programming.
+In the near future,
+I aspire to become a programmer.</p>
 </div>
 <p class="fade-in">🚀 I love technology and innovation!</p>
 

@@ -7,7 +7,26 @@
     background-color: transparent;
     min-height: 100vh;
 }
-
+.download-btn {
+    align-items: center;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #0056b3;
+  }
+  
 .container {
     display: flex;
     max-width: 1400px; /* Zgjeruar për të krijuar më shumë hapësirë */

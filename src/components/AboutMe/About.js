@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-
 import './AboutUs.css';
 import profileImage from '../../assets/elsu.jpg';
+import cvFile from '../../assets/Elsa Morina.pdf'; // Shto CV-në këtu
 
 const certificates = [
   { name: "Digital Skills Training on Python Programming", fileName: "c1.jpg", imageUrl: require("../../assets/c1.jpg") },
@@ -24,15 +24,23 @@ const AboutUs = () => {
   };
 
   return (
-    <section className="about-us">
+    <section id="about-us" className="about-us">
       <div className="container">
         <div className="image-section">
           <img src={profileImage} alt="Profile" />
-          <h3 className="name-title">Emri: Elsa <br/>
+          <h3 className="name-title">
+            Emri: Elsa <br/>
             Mbiemri: Morina <br />
             Datelindja: 10/06/2004 <br/>
-            VendLindja: Prishtine</h3> 
+            VendLindja: Prishtinë
+          </h3>
+          
+          {/* Butoni për shkarkimin e CV-së */}
+          <a href={cvFile} download="Elsa_Morina_CV.pdf" className="download-btn">
+            📄 Shkarko CV
+          </a>
         </div>
+
         <div className="content">
           <h2>About Me</h2>
           <p>
@@ -46,8 +54,9 @@ const AboutUs = () => {
             <div className="skills">
               <h3>Skills</h3>
               <ul>
-                <li>Php</li>
-                <li>Angular</li>
+                <li>Node.js</li>
+                <li>Next.js</li>
+                <li>Express</li>
                 <li>MySQL</li>
                 <li>JavaScript</li>
                 <li>React</li>
